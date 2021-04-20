@@ -2,7 +2,7 @@
 
 **Twitter** is a basic twitter app to read your tweets.
 
-Time spent: **10** hours spent in total
+Time spent: **8** hours spent in total
 
 ## User Stories
 
@@ -23,5 +23,12 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![](https://i.imgur.com/yY8ZW2E.gif)
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+During this app, I had trouble completing Twitter's login page, as the login button wouldn't navigate to the authorization page/login page of twitter. A 401 error kept appearing. Realizing that Twitter increased its security on its API usage, I had to sign my submit a form on regarding my usage of their API and generate a new consumer key and consumer secret key. I then replaced these in the  TwitterAPICaller.swift file. Lastly, I enabled 3-legged oauth in the app settings. Finally, the login button was able to redirect me to Twitter's login authorization page. 
+
 

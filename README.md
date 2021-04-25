@@ -24,6 +24,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+![](https://i.imgur.com/dvoKJQX.gif)
 
 
 # Twitter - Part I

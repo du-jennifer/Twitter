@@ -172,11 +172,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOj-cg-NbL">
+                                <rect key="frame" x="309" y="208" width="50" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Z8B-Zl-4Va"/>
+                                    <constraint firstAttribute="width" constant="50" id="azn-1B-bkq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ldx-lX-ISm">
-                                <rect key="frame" x="0.0" y="44" width="375" height="128"/>
+                                <rect key="frame" x="8" y="52" width="359" height="140"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="zYB-Xf-XO1"/>
+                                    <constraint firstAttribute="height" constant="140" id="zYB-Xf-XO1"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -186,9 +196,11 @@
                         <viewLayoutGuide key="safeArea" id="854-Bp-NsQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ldx-lX-ISm" firstAttribute="leading" secondItem="854-Bp-NsQ" secondAttribute="leading" id="BSd-gb-hz1"/>
-                            <constraint firstItem="ldx-lX-ISm" firstAttribute="top" secondItem="854-Bp-NsQ" secondAttribute="top" id="E5Y-cB-Kic"/>
-                            <constraint firstItem="854-Bp-NsQ" firstAttribute="trailing" secondItem="ldx-lX-ISm" secondAttribute="trailing" id="cZe-3t-ysd"/>
+                            <constraint firstItem="ldx-lX-ISm" firstAttribute="leading" secondItem="854-Bp-NsQ" secondAttribute="leading" constant="8" id="BSd-gb-hz1"/>
+                            <constraint firstItem="ldx-lX-ISm" firstAttribute="top" secondItem="854-Bp-NsQ" secondAttribute="top" constant="8" id="E5Y-cB-Kic"/>
+                            <constraint firstItem="UOj-cg-NbL" firstAttribute="top" secondItem="ldx-lX-ISm" secondAttribute="bottom" constant="16" id="WkA-d5-tQm"/>
+                            <constraint firstItem="854-Bp-NsQ" firstAttribute="trailing" secondItem="ldx-lX-ISm" secondAttribute="trailing" constant="8" id="cZe-3t-ysd"/>
+                            <constraint firstItem="854-Bp-NsQ" firstAttribute="trailing" secondItem="UOj-cg-NbL" secondAttribute="trailing" constant="16" id="lhU-DO-Ssw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2x6-ob-ocC">
@@ -206,12 +218,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="countDownLabel" destination="UOj-cg-NbL" id="uxO-4a-1sW"/>
                         <outlet property="tweetTextView" destination="ldx-lX-ISm" id="WK0-Df-Dj4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojE-Wi-dSu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2247" y="-344"/>
+            <point key="canvasLocation" x="2245.5999999999999" y="-344.07796101949026"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uO5-ff-cB5">

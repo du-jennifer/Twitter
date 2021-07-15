@@ -10,8 +10,13 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginButton.layer.cornerRadius = 10
+        
 
         // Do any additional setup after loading the view.
     }
@@ -25,10 +30,11 @@ class LoginViewController: UIViewController {
     @IBAction func onLogInButton(_ sender: Any) {
         let myUrl = "https://api.twitter.com/oauth/request_token"
         
-        UserDefaults.standard.set(true, forKey: "userLoggedIn")
+        //UserDefaults.standard.set(true, forKey: "userLoggedIn")
         
         TwitterAPICaller.client?.login(url: myUrl, success: {
             self.performSegue(withIdentifier: "loginToHome", sender: self)
+            UserDefaults.standard.set(true, forKey: "userLoggedIn")
         }, failure: { (Error) in
             print("Code not log in!")
         })

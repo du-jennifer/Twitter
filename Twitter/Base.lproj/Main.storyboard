@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AG7-ar-k2H">
-                                <rect key="frame" x="95" y="306.5" width="185" height="54"/>
+                                <rect key="frame" x="95" y="410" width="185" height="54"/>
                                 <color key="backgroundColor" red="0.15954822299999999" green="0.61840671300000005" blue="0.94906038049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="Rbf-i1-pK4"/>
@@ -32,15 +32,25 @@
                                     <action selector="onLogInButton:" destination="UUT-xN-z0P" eventType="touchUpInside" id="5V0-Dl-fIm"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="TwitterLogoBlue" translatesAutoresizingMaskIntoConstraints="NO" id="w07-5B-xce">
+                                <rect key="frame" x="62.5" y="150" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="kUf-mD-mzU"/>
+                                    <constraint firstAttribute="width" constant="250" id="v7r-l6-T3j"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ixc-BK-4ii"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="AG7-ar-k2H" firstAttribute="centerX" secondItem="lSE-5Z-NBi" secondAttribute="centerX" id="9nb-VK-MoB"/>
-                            <constraint firstItem="AG7-ar-k2H" firstAttribute="centerY" secondItem="lSE-5Z-NBi" secondAttribute="centerY" id="d3I-FV-ygU"/>
+                            <constraint firstItem="AG7-ar-k2H" firstAttribute="top" secondItem="w07-5B-xce" secondAttribute="bottom" constant="10" id="ZpL-8b-RY0"/>
+                            <constraint firstItem="w07-5B-xce" firstAttribute="centerX" secondItem="lSE-5Z-NBi" secondAttribute="centerX" id="rnj-Jf-MD1"/>
+                            <constraint firstItem="w07-5B-xce" firstAttribute="top" secondItem="ixc-BK-4ii" secondAttribute="top" constant="150" id="uXU-6V-MKy"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="AG7-ar-k2H" id="CEZ-9I-ta3"/>
                         <segue destination="NFQ-Oe-HR1" kind="presentation" identifier="loginToHome" id="Q0U-yu-yh6"/>
                     </connections>
                 </viewController>
@@ -244,6 +254,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TwitterLogoBlue" width="200" height="200"/>
         <image name="favor-icon" width="30" height="30"/>
         <image name="retweet-icon" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">

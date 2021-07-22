@@ -18,6 +18,9 @@ class TweetViewController: UIViewController, UITextViewDelegate {
         tweetTextView.becomeFirstResponder()
         tweetTextView.delegate = self
         
+        tweetTextView.layer.borderWidth = 1.0
+        tweetTextView.layer.cornerRadius = 5
+        
     }
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {

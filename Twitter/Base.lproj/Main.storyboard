@@ -173,7 +173,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOj-cg-NbL">
-                                <rect key="frame" x="309" y="208" width="50" height="25"/>
+                                <rect key="frame" x="317" y="204" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Z8B-Zl-4Va"/>
                                     <constraint firstAttribute="width" constant="50" id="azn-1B-bkq"/>
@@ -183,7 +183,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ldx-lX-ISm">
-                                <rect key="frame" x="8" y="52" width="359" height="140"/>
+                                <rect key="frame" x="10" y="54" width="355" height="140"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="zYB-Xf-XO1"/>
@@ -196,11 +196,11 @@
                         <viewLayoutGuide key="safeArea" id="854-Bp-NsQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ldx-lX-ISm" firstAttribute="leading" secondItem="854-Bp-NsQ" secondAttribute="leading" constant="8" id="BSd-gb-hz1"/>
-                            <constraint firstItem="ldx-lX-ISm" firstAttribute="top" secondItem="854-Bp-NsQ" secondAttribute="top" constant="8" id="E5Y-cB-Kic"/>
-                            <constraint firstItem="UOj-cg-NbL" firstAttribute="top" secondItem="ldx-lX-ISm" secondAttribute="bottom" constant="16" id="WkA-d5-tQm"/>
-                            <constraint firstItem="854-Bp-NsQ" firstAttribute="trailing" secondItem="ldx-lX-ISm" secondAttribute="trailing" constant="8" id="cZe-3t-ysd"/>
-                            <constraint firstItem="854-Bp-NsQ" firstAttribute="trailing" secondItem="UOj-cg-NbL" secondAttribute="trailing" constant="16" id="lhU-DO-Ssw"/>
+                            <constraint firstItem="ldx-lX-ISm" firstAttribute="leading" secondItem="854-Bp-NsQ" secondAttribute="leading" constant="10" id="BSd-gb-hz1"/>
+                            <constraint firstItem="ldx-lX-ISm" firstAttribute="top" secondItem="854-Bp-NsQ" secondAttribute="top" constant="10" id="E5Y-cB-Kic"/>
+                            <constraint firstItem="UOj-cg-NbL" firstAttribute="top" secondItem="ldx-lX-ISm" secondAttribute="bottom" constant="10" id="WkA-d5-tQm"/>
+                            <constraint firstItem="854-Bp-NsQ" firstAttribute="trailing" secondItem="ldx-lX-ISm" secondAttribute="trailing" constant="10" id="cZe-3t-ysd"/>
+                            <constraint firstItem="854-Bp-NsQ" firstAttribute="trailing" secondItem="UOj-cg-NbL" secondAttribute="trailing" constant="8" id="lhU-DO-Ssw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2x6-ob-ocC">
